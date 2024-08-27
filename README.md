@@ -1,2 +1,2 @@
 # ielts-speaking-buddy
-Speaking Helper Application with AI based error finder
+AI-Powered Speaking Assistant with Error Detection
