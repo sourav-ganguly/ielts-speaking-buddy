@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		211438BC2C7E0B340057E8D2 /* PercentageArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211438BB2C7E0B340057E8D2 /* PercentageArc.swift */; };
+		211438BE2C7E6B600057E8D2 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211438BD2C7E6B600057E8D2 /* Speaker.swift */; };
+		216D677A2C3B109000CFC78A /* SpeakingBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67792C3B109000CFC78A /* SpeakingBuddyApp.swift */; };
+		216D677E2C3B109100CFC78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216D677D2C3B109100CFC78A /* Assets.xcassets */; };
+		216D678B2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D678A2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift */; };
+		216D67952C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67942C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift */; };
+		216D67972C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67962C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift */; };
+		216D67BA2C3B1E7F00CFC78A /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B12C3B1E7F00CFC78A /* MeetingView.swift */; };
+		216D67BB2C3B1E7F00CFC78A /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AA2C3B1E7F00CFC78A /* DetailEditView.swift */; };
+		216D67BC2C3B1E7F00CFC78A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B72C3B1E7F00CFC78A /* ThemeView.swift */; };
+		216D67BD2C3B1E7F00CFC78A /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */; };
+		216D67BE2C3B1E7F00CFC78A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AB2C3B1E7F00CFC78A /* DetailView.swift */; };
+		216D67BF2C3B1E7F00CFC78A /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B02C3B1E7F00CFC78A /* MeetingTimerView.swift */; };
+		216D67C02C3B1E7F00CFC78A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67A92C3B1E7F00CFC78A /* CardView.swift */; };
+		216D67C12C3B1E7F00CFC78A /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B52C3B1E7F00CFC78A /* SpeakerArc.swift */; };
+		216D67C22C3B1E7F00CFC78A /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B62C3B1E7F00CFC78A /* ThemePicker.swift */; };
+		216D67C32C3B1E7F00CFC78A /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */; };
+		216D67C42C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */; };
+		216D67C52C3B1E7F00CFC78A /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */; };
+		216D67C62C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B82C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift */; };
+		216D67C72C3B1E7F00CFC78A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */; };
+		216D67C82C3B1E7F00CFC78A /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */; };
+		216D67C92C3B1E7F00CFC78A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AD2C3B1E7F00CFC78A /* HistoryView.swift */; };
+		216D67D32C3B1E9200CFC78A /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */; };
+		216D67D42C3B1E9200CFC78A /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CF2C3B1E9200CFC78A /* ScrumTimer.swift */; };
+		216D67D52C3B1E9200CFC78A /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */; };
+		216D67D62C3B1E9200CFC78A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67D12C3B1E9200CFC78A /* Theme.swift */; };
+		216D67D72C3B1E9200CFC78A /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CB2C3B1E9200CFC78A /* DailyScrum.swift */; };
+		216D67D82C3B1E9200CFC78A /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CC2C3B1E9200CFC78A /* ErrorWrapper.swift */; };
+		216D67D92C3B1E9200CFC78A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CD2C3B1E9200CFC78A /* History.swift */; };
+		216D67DA2C3B1E9200CFC78A /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */; };
+		216D67DD2C3B1EA300CFC78A /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 216D67DB2C3B1EA300CFC78A /* ding.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		216D67872C3B109100CFC78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 216D676E2C3B109000CFC78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 216D67752C3B109000CFC78A;
+			remoteInfo = "IELTS Speaking Buddy";
+		};
+		216D67912C3B109100CFC78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 216D676E2C3B109000CFC78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 216D67752C3B109000CFC78A;
+			remoteInfo = "IELTS Speaking Buddy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		211438BB2C7E0B340057E8D2 /* PercentageArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageArc.swift; sourceTree = "<group>"; };
+		211438BD2C7E6B600057E8D2 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		216D67762C3B109000CFC78A /* IELTS Speaking Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IELTS Speaking Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		216D67792C3B109000CFC78A /* SpeakingBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingBuddyApp.swift; sourceTree = "<group>"; };
+		216D677D2C3B109100CFC78A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		216D67862C3B109100CFC78A /* IELTS Speaking BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IELTS Speaking BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		216D678A2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IELTS_Speaking_BuddyTests.swift; sourceTree = "<group>"; };
+		216D67902C3B109100CFC78A /* IELTS Speaking BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IELTS Speaking BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		216D67942C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IELTS_Speaking_BuddyUITests.swift; sourceTree = "<group>"; };
+		216D67962C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IELTS_Speaking_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		216D67A32C3B1C7F00CFC78A /* IELTS-Speaking-Buddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IELTS-Speaking-Buddy-Info.plist"; sourceTree = SOURCE_ROOT; };
+		216D67A92C3B1E7F00CFC78A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		216D67AA2C3B1E7F00CFC78A /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		216D67AB2C3B1E7F00CFC78A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		216D67AD2C3B1E7F00CFC78A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
+		216D67B02C3B1E7F00CFC78A /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		216D67B12C3B1E7F00CFC78A /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
+		216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
+		216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		216D67B52C3B1E7F00CFC78A /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		216D67B62C3B1E7F00CFC78A /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		216D67B72C3B1E7F00CFC78A /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		216D67B82C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		216D67CB2C3B1E9200CFC78A /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		216D67CC2C3B1E9200CFC78A /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		216D67CD2C3B1E9200CFC78A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
+		216D67CF2C3B1E9200CFC78A /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
+		216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		216D67D12C3B1E9200CFC78A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		216D67DB2C3B1EA300CFC78A /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		216D67732C3B109000CFC78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216D67832C3B109100CFC78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216D678D2C3B109100CFC78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		216D676D2C3B109000CFC78A = {
+			isa = PBXGroup;
+			children = (
+				216D67782C3B109000CFC78A /* IELTS Speaking Buddy */,
+				216D67892C3B109100CFC78A /* IELTS Speaking BuddyTests */,
+				216D67932C3B109100CFC78A /* IELTS Speaking BuddyUITests */,
+				216D67772C3B109000CFC78A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		216D67772C3B109000CFC78A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				216D67762C3B109000CFC78A /* IELTS Speaking Buddy.app */,
+				216D67862C3B109100CFC78A /* IELTS Speaking BuddyTests.xctest */,
+				216D67902C3B109100CFC78A /* IELTS Speaking BuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		216D67782C3B109000CFC78A /* IELTS Speaking Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				216D67DC2C3B1EA300CFC78A /* Resources */,
+				216D67D22C3B1E9200CFC78A /* Models */,
+				216D67B92C3B1E7F00CFC78A /* Views */,
+				216D67A32C3B1C7F00CFC78A /* IELTS-Speaking-Buddy-Info.plist */,
+				216D67792C3B109000CFC78A /* SpeakingBuddyApp.swift */,
+				216D677D2C3B109100CFC78A /* Assets.xcassets */,
+			);
+			path = "IELTS Speaking Buddy";
+			sourceTree = "<group>";
+		};
+		216D67892C3B109100CFC78A /* IELTS Speaking BuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				216D678A2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift */,
+			);
+			path = "IELTS Speaking BuddyTests";
+			sourceTree = "<group>";
+		};
+		216D67932C3B109100CFC78A /* IELTS Speaking BuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				216D67942C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift */,
+				216D67962C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift */,
+			);
+			path = "IELTS Speaking BuddyUITests";
+			sourceTree = "<group>";
+		};
+		216D67B92C3B1E7F00CFC78A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				211438BB2C7E0B340057E8D2 /* PercentageArc.swift */,
+				216D67A92C3B1E7F00CFC78A /* CardView.swift */,
+				216D67AA2C3B1E7F00CFC78A /* DetailEditView.swift */,
+				216D67AB2C3B1E7F00CFC78A /* DetailView.swift */,
+				216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */,
+				216D67AD2C3B1E7F00CFC78A /* HistoryView.swift */,
+				216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */,
+				216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */,
+				216D67B02C3B1E7F00CFC78A /* MeetingTimerView.swift */,
+				216D67B12C3B1E7F00CFC78A /* MeetingView.swift */,
+				216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */,
+				216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */,
+				216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */,
+				216D67B52C3B1E7F00CFC78A /* SpeakerArc.swift */,
+				216D67B62C3B1E7F00CFC78A /* ThemePicker.swift */,
+				216D67B72C3B1E7F00CFC78A /* ThemeView.swift */,
+				216D67B82C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		216D67D22C3B1E9200CFC78A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				211438BD2C7E6B600057E8D2 /* Speaker.swift */,
+				216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */,
+				216D67CB2C3B1E9200CFC78A /* DailyScrum.swift */,
+				216D67CC2C3B1E9200CFC78A /* ErrorWrapper.swift */,
+				216D67CD2C3B1E9200CFC78A /* History.swift */,
+				216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */,
+				216D67CF2C3B1E9200CFC78A /* ScrumTimer.swift */,
+				216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */,
+				216D67D12C3B1E9200CFC78A /* Theme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		216D67DC2C3B1EA300CFC78A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				216D67DB2C3B1EA300CFC78A /* ding.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		216D67752C3B109000CFC78A /* IELTS Speaking Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 216D679A2C3B109100CFC78A /* Build configuration list for PBXNativeTarget "IELTS Speaking Buddy" */;
+			buildPhases = (
+				216D67722C3B109000CFC78A /* Sources */,
+				216D67732C3B109000CFC78A /* Frameworks */,
+				216D67742C3B109000CFC78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IELTS Speaking Buddy";
+			productName = "IELTS Speaking Buddy";
+			productReference = 216D67762C3B109000CFC78A /* IELTS Speaking Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		216D67852C3B109100CFC78A /* IELTS Speaking BuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 216D679D2C3B109100CFC78A /* Build configuration list for PBXNativeTarget "IELTS Speaking BuddyTests" */;
+			buildPhases = (
+				216D67822C3B109100CFC78A /* Sources */,
+				216D67832C3B109100CFC78A /* Frameworks */,
+				216D67842C3B109100CFC78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				216D67882C3B109100CFC78A /* PBXTargetDependency */,
+			);
+			name = "IELTS Speaking BuddyTests";
+			productName = "IELTS Speaking BuddyTests";
+			productReference = 216D67862C3B109100CFC78A /* IELTS Speaking BuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		216D678F2C3B109100CFC78A /* IELTS Speaking BuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 216D67A02C3B109100CFC78A /* Build configuration list for PBXNativeTarget "IELTS Speaking BuddyUITests" */;
+			buildPhases = (
+				216D678C2C3B109100CFC78A /* Sources */,
+				216D678D2C3B109100CFC78A /* Frameworks */,
+				216D678E2C3B109100CFC78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				216D67922C3B109100CFC78A /* PBXTargetDependency */,
+			);
+			name = "IELTS Speaking BuddyUITests";
+			productName = "IELTS Speaking BuddyUITests";
+			productReference = 216D67902C3B109100CFC78A /* IELTS Speaking BuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		216D676E2C3B109000CFC78A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					216D67752C3B109000CFC78A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					216D67852C3B109100CFC78A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 216D67752C3B109000CFC78A;
+					};
+					216D678F2C3B109100CFC78A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 216D67752C3B109000CFC78A;
+					};
+				};
+			};
+			buildConfigurationList = 216D67712C3B109000CFC78A /* Build configuration list for PBXProject "IELTS Speaking Buddy" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 216D676D2C3B109000CFC78A;
+			productRefGroup = 216D67772C3B109000CFC78A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				216D67752C3B109000CFC78A /* IELTS Speaking Buddy */,
+				216D67852C3B109100CFC78A /* IELTS Speaking BuddyTests */,
+				216D678F2C3B109100CFC78A /* IELTS Speaking BuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		216D67742C3B109000CFC78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216D67DD2C3B1EA300CFC78A /* ding.wav in Resources */,
+				216D677E2C3B109100CFC78A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216D67842C3B109100CFC78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216D678E2C3B109100CFC78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		216D67722C3B109000CFC78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216D67BA2C3B1E7F00CFC78A /* MeetingView.swift in Sources */,
+				216D67BB2C3B1E7F00CFC78A /* DetailEditView.swift in Sources */,
+				211438BC2C7E0B340057E8D2 /* PercentageArc.swift in Sources */,
+				216D67BC2C3B1E7F00CFC78A /* ThemeView.swift in Sources */,
+				216D67BD2C3B1E7F00CFC78A /* NewScrumSheet.swift in Sources */,
+				216D67BE2C3B1E7F00CFC78A /* DetailView.swift in Sources */,
+				216D67BF2C3B1E7F00CFC78A /* MeetingTimerView.swift in Sources */,
+				216D67C02C3B1E7F00CFC78A /* CardView.swift in Sources */,
+				216D67C12C3B1E7F00CFC78A /* SpeakerArc.swift in Sources */,
+				216D67C22C3B1E7F00CFC78A /* ThemePicker.swift in Sources */,
+				216D67C32C3B1E7F00CFC78A /* MeetingFooterView.swift in Sources */,
+				216D67C42C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift in Sources */,
+				216D67D32C3B1E9200CFC78A /* SpeechRecognizer.swift in Sources */,
+				216D67D42C3B1E9200CFC78A /* ScrumTimer.swift in Sources */,
+				216D67D52C3B1E9200CFC78A /* AVPlayer+Ding.swift in Sources */,
+				216D67D62C3B1E9200CFC78A /* Theme.swift in Sources */,
+				216D67D72C3B1E9200CFC78A /* DailyScrum.swift in Sources */,
+				216D67D82C3B1E9200CFC78A /* ErrorWrapper.swift in Sources */,
+				216D67D92C3B1E9200CFC78A /* History.swift in Sources */,
+				216D67DA2C3B1E9200CFC78A /* ScrumStore.swift in Sources */,
+				216D67C52C3B1E7F00CFC78A /* MeetingHeaderView.swift in Sources */,
+				216D67C62C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift in Sources */,
+				211438BE2C7E6B600057E8D2 /* Speaker.swift in Sources */,
+				216D67C72C3B1E7F00CFC78A /* ErrorView.swift in Sources */,
+				216D67C82C3B1E7F00CFC78A /* ScrumsView.swift in Sources */,
+				216D67C92C3B1E7F00CFC78A /* HistoryView.swift in Sources */,
+				216D677A2C3B109000CFC78A /* SpeakingBuddyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216D67822C3B109100CFC78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216D678B2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		216D678C2C3B109100CFC78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216D67952C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift in Sources */,
+				216D67972C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		216D67882C3B109100CFC78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 216D67752C3B109000CFC78A /* IELTS Speaking Buddy */;
+			targetProxy = 216D67872C3B109100CFC78A /* PBXContainerItemProxy */;
+		};
+		216D67922C3B109100CFC78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 216D67752C3B109000CFC78A /* IELTS Speaking Buddy */;
+			targetProxy = 216D67912C3B109100CFC78A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		216D67982C3B109100CFC78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		216D67992C3B109100CFC78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		216D679B2C3B109100CFC78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IELTS Speaking Buddy/Preview Content\"";
+				DEVELOPMENT_TEAM = LL2KGA689L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IELTS-Speaking-Buddy-Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorder to show transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can see trascription of recorded audio";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ganguly.IELTS-Speaking-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		216D679C2C3B109100CFC78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IELTS Speaking Buddy/Preview Content\"";
+				DEVELOPMENT_TEAM = LL2KGA689L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IELTS-Speaking-Buddy-Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorder to show transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can see trascription of recorded audio";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ganguly.IELTS-Speaking-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		216D679E2C3B109100CFC78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL2KGA689L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ganguly.IELTS-Speaking-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IELTS Speaking Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IELTS Speaking Buddy";
+			};
+			name = Debug;
+		};
+		216D679F2C3B109100CFC78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL2KGA689L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ganguly.IELTS-Speaking-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IELTS Speaking Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IELTS Speaking Buddy";
+			};
+			name = Release;
+		};
+		216D67A12C3B109100CFC78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL2KGA689L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ganguly.IELTS-Speaking-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IELTS Speaking Buddy";
+			};
+			name = Debug;
+		};
+		216D67A22C3B109100CFC78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL2KGA689L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ganguly.IELTS-Speaking-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IELTS Speaking Buddy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		216D67712C3B109000CFC78A /* Build configuration list for PBXProject "IELTS Speaking Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				216D67982C3B109100CFC78A /* Debug */,
+				216D67992C3B109100CFC78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		216D679A2C3B109100CFC78A /* Build configuration list for PBXNativeTarget "IELTS Speaking Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				216D679B2C3B109100CFC78A /* Debug */,
+				216D679C2C3B109100CFC78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		216D679D2C3B109100CFC78A /* Build configuration list for PBXNativeTarget "IELTS Speaking BuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				216D679E2C3B109100CFC78A /* Debug */,
+				216D679F2C3B109100CFC78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		216D67A02C3B109100CFC78A /* Build configuration list for PBXNativeTarget "IELTS Speaking BuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				216D67A12C3B109100CFC78A /* Debug */,
+				216D67A22C3B109100CFC78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 216D676E2C3B109000CFC78A /* Project object */;
+}
