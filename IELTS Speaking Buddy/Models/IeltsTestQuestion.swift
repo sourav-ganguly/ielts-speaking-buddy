@@ -55,17 +55,17 @@ extension IeltsTestQuestion {
 extension IeltsTestQuestion {
     static let sampleData: [IeltsTestQuestion] =
     [
-        IeltsTestQuestion(title: "Speaking Part 1",
-                   attendees: ["Cathy", "Daisy", "Simon", "Jonathan"],
-                   lengthInMinutes: 10,
-                   theme: .yellow),
-        IeltsTestQuestion(title: "Speaking Cue Card",
-                   attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"],
-                   lengthInMinutes: 5,
-                   theme: .orange),
+        IeltsTestQuestion(title: "Tell me about the place you grow up.",
+                          attendees: ["Cathy"],
+                          lengthInMinutes: 1,
+                          theme: .orange),
+        IeltsTestQuestion(title: "Tell me about the time you helped someone.",
+                          attendees: ["Katie"],
+                          lengthInMinutes: 2,
+                          theme: .orange),
         IeltsTestQuestion(title: "Speaking Part 3",
-                   attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
-                   lengthInMinutes: 5,
-                   theme: .poppy)
+                          attendees: ["Chella"],
+                          lengthInMinutes: 3,
+                          theme: .poppy)
     ]
 }

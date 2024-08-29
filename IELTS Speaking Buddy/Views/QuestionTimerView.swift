@@ -31,9 +31,6 @@ struct QuestionTimerView: View {
                 .foregroundStyle(theme.accentColor)
             }
             .overlay  {
-//                Circle()
-//                    .stroke(theme.mainColor, lineWidth: 16)
-//                    .padding(12)
 
                 PercentageArc(currentPercent: percentElapsed)
                     .stroke(theme.mainColor, lineWidth: 12)

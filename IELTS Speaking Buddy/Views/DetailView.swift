@@ -13,7 +13,7 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Question Info")) {
-                NavigationLink(destination: MeetingView(scrum: $scrum)) {
+                NavigationLink(destination: ExamView(question: $scrum)) {
                     Label("Start the test", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)

@@ -5,8 +5,8 @@
 import SwiftUI
 import AVFoundation
 
-struct MeetingView: View {
-    @Binding var scrum: IeltsTestQuestion
+struct ExamView: View {
+    @Binding var question: IeltsTestQuestion
     @StateObject var scrumTimer = ScrumTimer()
     @StateObject var speechRecognizer = SpeechRecognizer()
     @State private var isRecording = false
@@ -17,26 +17,34 @@ struct MeetingView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16.0)
-                .fill(scrum.theme.mainColor)
+                .fill(question.theme.mainColor)
             VStack {
-                MeetingHeaderView(
-                    secondsElapsed: scrumTimer.secondsElapsed,
-                    secondsRemaining: scrumTimer.secondsRemaining,
-                    theme: scrum.theme
-                )
 
-                QuestionView(question: "Tell me little bit about the place you lived in.")
+                Text(question.questionSection)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                    .padding(.top)
+
+                QuestionView(question: question.title)
+                    .padding(.horizontal)
 
                 QuestionTimerView(
                     speaker: speaker,
                     percentElapsed: scrumTimer.percentTimeElapsed,
                     isRecording: isRecording,
-                    theme: scrum.theme
+                    theme: question.theme
                 )
+
+                QuestionDetailTimerView(
+                    secondsElapsed: scrumTimer.secondsElapsed,
+                    secondsRemaining: scrumTimer.secondsRemaining,
+                    theme: question.theme
+                )
+                .padding(.bottom)
             }
         }
         .padding()
-        .foregroundColor(scrum.theme.accentColor)
+        .foregroundColor(question.theme.accentColor)
         .onAppear {
             startScrum()
         }
@@ -47,7 +55,7 @@ struct MeetingView: View {
     }
     
     private func startScrum() {
-        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.reset(lengthInMinutes: question.lengthInMinutes, attendees: question.attendees)
         scrumTimer.speakerChangedAction = {
             player.seek(to: .zero)
             player.play()
@@ -62,15 +70,15 @@ struct MeetingView: View {
         scrumTimer.stopScrum()
         speechRecognizer.stopTranscribing()
         isRecording = false
-        let newHistory = Transcript(attendees: scrum.attendees,
+        let newHistory = Transcript(attendees: question.attendees,
                                  transcript: speechRecognizer.transcript)
-        scrum.transcript.insert(newHistory, at: 0)
+        question.transcript.insert(newHistory, at: 0)
     }
 }
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingView(scrum: .constant(IeltsTestQuestion.sampleData[0]))
+        ExamView(question: .constant(IeltsTestQuestion.sampleData[0]))
     }
 }
 
@@ -87,6 +95,5 @@ struct QuestionView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.black, lineWidth: 2)
             )
-            .padding()
     }
 }

@@ -16,7 +16,7 @@
 		216D678B2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D678A2C3B109100CFC78A /* IELTS_Speaking_BuddyTests.swift */; };
 		216D67952C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67942C3B109100CFC78A /* IELTS_Speaking_BuddyUITests.swift */; };
 		216D67972C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67962C3B109100CFC78A /* IELTS_Speaking_BuddyUITestsLaunchTests.swift */; };
-		216D67BA2C3B1E7F00CFC78A /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B12C3B1E7F00CFC78A /* MeetingView.swift */; };
+		216D67BA2C3B1E7F00CFC78A /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B12C3B1E7F00CFC78A /* ExamView.swift */; };
 		216D67BB2C3B1E7F00CFC78A /* QuestionEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AA2C3B1E7F00CFC78A /* QuestionEditView.swift */; };
 		216D67BC2C3B1E7F00CFC78A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B72C3B1E7F00CFC78A /* ThemeView.swift */; };
 		216D67BD2C3B1E7F00CFC78A /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */; };
@@ -27,7 +27,7 @@
 		216D67C22C3B1E7F00CFC78A /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B62C3B1E7F00CFC78A /* ThemePicker.swift */; };
 		216D67C32C3B1E7F00CFC78A /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */; };
 		216D67C42C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */; };
-		216D67C52C3B1E7F00CFC78A /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */; };
+		216D67C52C3B1E7F00CFC78A /* QuestionDetailTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AF2C3B1E7F00CFC78A /* QuestionDetailTimerView.swift */; };
 		216D67C62C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B82C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift */; };
 		216D67C72C3B1E7F00CFC78A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */; };
 		216D67C82C3B1E7F00CFC78A /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */; };
@@ -80,9 +80,9 @@
 		216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		216D67AD2C3B1E7F00CFC78A /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
 		216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
-		216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
+		216D67AF2C3B1E7F00CFC78A /* QuestionDetailTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailTimerView.swift; sourceTree = "<group>"; };
 		216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTimerView.swift; sourceTree = "<group>"; };
-		216D67B12C3B1E7F00CFC78A /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		216D67B12C3B1E7F00CFC78A /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
 		216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
@@ -188,9 +188,9 @@
 				216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */,
 				216D67AD2C3B1E7F00CFC78A /* TranscriptView.swift */,
 				216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */,
-				216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */,
+				216D67AF2C3B1E7F00CFC78A /* QuestionDetailTimerView.swift */,
 				216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */,
-				216D67B12C3B1E7F00CFC78A /* MeetingView.swift */,
+				216D67B12C3B1E7F00CFC78A /* ExamView.swift */,
 				216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */,
 				216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */,
 				216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */,
@@ -356,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				216D67BA2C3B1E7F00CFC78A /* MeetingView.swift in Sources */,
+				216D67BA2C3B1E7F00CFC78A /* ExamView.swift in Sources */,
 				216D67BB2C3B1E7F00CFC78A /* QuestionEditView.swift in Sources */,
 				211438C12C7E71FF0057E8D2 /* Extras.swift in Sources */,
 				211438BC2C7E0B340057E8D2 /* PercentageArc.swift in Sources */,
@@ -377,7 +377,7 @@
 				216D67D82C3B1E9200CFC78A /* ErrorWrapper.swift in Sources */,
 				216D67D92C3B1E9200CFC78A /* Transcript.swift in Sources */,
 				216D67DA2C3B1E9200CFC78A /* ScrumStore.swift in Sources */,
-				216D67C52C3B1E7F00CFC78A /* MeetingHeaderView.swift in Sources */,
+				216D67C52C3B1E7F00CFC78A /* QuestionDetailTimerView.swift in Sources */,
 				216D67C62C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift in Sources */,
 				211438BE2C7E6B600057E8D2 /* Speaker.swift in Sources */,
 				216D67C72C3B1E7F00CFC78A /* ErrorView.swift in Sources */,
