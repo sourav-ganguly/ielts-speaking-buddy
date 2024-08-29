@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ScrumsView: View {
-    @Binding var scrums: [DailyScrum]
+    @Binding var scrums: [IeltsTestQuestion]
     @Environment(\.scenePhase) private var scenePhase
     @State private var isPresentingNewScrumView = false
     let saveAction: ()->Void
@@ -18,7 +18,7 @@ struct ScrumsView: View {
                 }
                 .listRowBackground(scrum.theme.mainColor)
             }
-            .navigationTitle("Daily Scrums")
+            .navigationTitle("IELTS Speaking")
             .toolbar {
                 Button(action: {
                     isPresentingNewScrumView = true
@@ -39,6 +39,6 @@ struct ScrumsView: View {
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrumsView(scrums: .constant(DailyScrum.sampleData), saveAction: {})
+        ScrumsView(scrums: .constant(IeltsTestQuestion.sampleData), saveAction: {})
     }
 }

@@ -48,7 +48,7 @@ final class ScrumTimer: ObservableObject {
         - lengthInMinutes: The meeting length.
         -  attendees: A list of attendees for the meeting.
      */
-    init(lengthInMinutes: Int = 0, attendees: [DailyScrum.Attendee] = []) {
+    init(lengthInMinutes: Int = 0, attendees: [IeltsTestQuestion.Attendee] = []) {
         self.lengthInMinutes = lengthInMinutes
         self.speakers = attendees.speakers
         secondsRemaining = lengthInSeconds
@@ -121,7 +121,7 @@ final class ScrumTimer: ObservableObject {
          - lengthInMinutes: The meeting length.
          - attendees: The name of each attendee.
      */
-    func reset(lengthInMinutes: Int, attendees: [DailyScrum.Attendee]) {
+    func reset(lengthInMinutes: Int, attendees: [IeltsTestQuestion.Attendee]) {
         self.lengthInMinutes = lengthInMinutes
         self.speakers = attendees.speakers
         secondsRemaining = lengthInSeconds
@@ -130,7 +130,7 @@ final class ScrumTimer: ObservableObject {
 }
 
 
-extension Array<DailyScrum.Attendee> {
+extension Array<IeltsTestQuestion.Attendee> {
     var speakers: [Speaker] {
         if isEmpty {
             return [Speaker(name: "Speaker 1", isCompleted: false)]

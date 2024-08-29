@@ -33,7 +33,7 @@ struct SpeakingBuddyApp: App {
                 }
             }
             .sheet(item: $errorWrapper) {
-                store.scrums = DailyScrum.sampleData
+                store.scrums = IeltsTestQuestion.sampleData
             } content: { wrapper in
                 ErrorView(errorWrapper: wrapper)
             }

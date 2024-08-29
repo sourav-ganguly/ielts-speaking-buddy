@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct MeetingTimerView: View {
+struct QuestionTimerView: View {
     let speaker: Speaker
     let percentElapsed: Int
     let isRecording: Bool
@@ -48,6 +48,6 @@ struct MeetingTimerView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        MeetingTimerView(speaker: Speaker(name: "Abc", isCompleted: false), percentElapsed: 15, isRecording: true, theme: .yellow)
+        QuestionTimerView(speaker: Speaker(name: "Abc", isCompleted: false), percentElapsed: 15, isRecording: true, theme: .yellow)
     }
 }

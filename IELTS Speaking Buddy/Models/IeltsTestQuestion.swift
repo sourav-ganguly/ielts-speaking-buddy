@@ -4,11 +4,12 @@
 
 import Foundation
 
-struct DailyScrum: Identifiable, Codable {
+struct IeltsTestQuestion: Identifiable, Codable {
     let id: UUID
     var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
+    var questionSection = "Speaking Cue Card"
     var lengthInMinutesAsDouble: Double {
         get {
             Double(lengthInMinutes)
@@ -29,7 +30,7 @@ struct DailyScrum: Identifiable, Codable {
     }
 }
 
-extension DailyScrum {
+extension IeltsTestQuestion {
     struct Attendee: Identifiable, Codable {
         let id: UUID
         var name: String
@@ -40,23 +41,23 @@ extension DailyScrum {
         }
     }
     
-    static var emptyScrum: DailyScrum {
-        DailyScrum(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
+    static var emptyScrum: IeltsTestQuestion {
+        IeltsTestQuestion(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
     }
 }
 
-extension DailyScrum {
-    static let sampleData: [DailyScrum] =
+extension IeltsTestQuestion {
+    static let sampleData: [IeltsTestQuestion] =
     [
-        DailyScrum(title: "Design",
+        IeltsTestQuestion(title: "Speaking Part 1",
                    attendees: ["Cathy", "Daisy", "Simon", "Jonathan"],
                    lengthInMinutes: 10,
                    theme: .yellow),
-        DailyScrum(title: "App Dev",
+        IeltsTestQuestion(title: "Speaking Cue Card",
                    attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"],
                    lengthInMinutes: 5,
                    theme: .orange),
-        DailyScrum(title: "Web Dev",
+        IeltsTestQuestion(title: "Speaking Part 3",
                    attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
                    lengthInMinutes: 5,
                    theme: .poppy)

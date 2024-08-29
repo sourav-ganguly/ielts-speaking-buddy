@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct CardView: View {
-    let scrum: DailyScrum
+    let scrum: IeltsTestQuestion
     var body: some View {
         VStack(alignment: .leading) {
             Text(scrum.title)
@@ -13,12 +13,11 @@ struct CardView: View {
                 .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
-                Label("\(scrum.attendees.count)", systemImage: "person.3")
-                    .accessibilityLabel("\(scrum.attendees.count) attendees")
-                Spacer()
+
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                     .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
+                Spacer()
             }
             .font(.caption)
         }
@@ -28,7 +27,7 @@ struct CardView: View {
 }
 
 struct CardView_Previews: PreviewProvider {
-    static var scrum = DailyScrum.sampleData[0]
+    static var scrum = IeltsTestQuestion.sampleData[0]
     static var previews: some View {
         CardView(scrum: scrum)
             .background(scrum.theme.mainColor)

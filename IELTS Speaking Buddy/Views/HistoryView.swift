@@ -37,9 +37,9 @@ extension History {
 struct HistoryView_Previews: PreviewProvider {
     static var history: History {
         History(attendees: [
-            DailyScrum.Attendee(name: "Jon"),
-            DailyScrum.Attendee(name: "Darla"),
-            DailyScrum.Attendee(name: "Luis")
+            IeltsTestQuestion.Attendee(name: "Jon"),
+            IeltsTestQuestion.Attendee(name: "Darla"),
+            IeltsTestQuestion.Attendee(name: "Luis")
         ],
                 transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI...")
     }
