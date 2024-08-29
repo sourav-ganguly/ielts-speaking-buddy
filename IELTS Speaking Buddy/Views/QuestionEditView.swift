@@ -33,7 +33,6 @@ struct QuestionEditView: View {
 }
 
 
-
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionEditView(scrum: .constant(IeltsTestQuestion.sampleData[0]))

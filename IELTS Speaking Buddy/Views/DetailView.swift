@@ -12,18 +12,20 @@ struct DetailView: View {
     
     var body: some View {
         List {
-            Section(header: Text("Meeting Info")) {
+            Section(header: Text("Question Info")) {
                 NavigationLink(destination: MeetingView(scrum: $scrum)) {
-                    Label("Start Meeting", systemImage: "timer")
+                    Label("Start the test", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
                 }
+
                 HStack {
                     Label("Length", systemImage: "clock")
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
                 }
                 .accessibilityElement(children: .combine)
+
                 HStack {
                     Label("Theme", systemImage: "paintpalette")
                     Spacer()
@@ -35,17 +37,13 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .combine)
             }
-            Section(header: Text("Attendees")) {
-                ForEach(scrum.attendees) { attendee in
-                    Label(attendee.name, systemImage: "person")
+
+            Section(header: Text("Transcripts")) {
+                if scrum.transcript.isEmpty {
+                    Label("No transcripts yet", systemImage: "calendar.badge.exclamationmark")
                 }
-            }
-            Section(header: Text("History")) {
-                if scrum.history.isEmpty {
-                    Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
-                }
-                ForEach(scrum.history) { history in
-                    NavigationLink(destination: HistoryView(history: history)) {
+                ForEach(scrum.transcript) { history in
+                    NavigationLink(destination: TranscriptView(transcript: history)) {
                         HStack {
                             Image(systemName: "calendar")
                             Text(history.date, style: .date)

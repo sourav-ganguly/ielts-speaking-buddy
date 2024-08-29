@@ -4,6 +4,12 @@
 
 import Foundation
 
+enum QuestionSection {
+    case speakingPartOne
+    case speakingCueCard
+    case speakingPartTwo
+}
+
 struct IeltsTestQuestion: Identifiable, Codable {
     let id: UUID
     var title: String
@@ -19,7 +25,7 @@ struct IeltsTestQuestion: Identifiable, Codable {
         }
     }
     var theme: Theme
-    var history: [History] = []
+    var transcript: [Transcript] = []
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id

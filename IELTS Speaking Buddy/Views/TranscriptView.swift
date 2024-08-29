@@ -4,18 +4,15 @@
 
 import SwiftUI
 
-struct HistoryView: View {
-    let history: History
+struct TranscriptView: View {
+    let transcript: Transcript
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
                 Divider()
                     .padding(.bottom)
-                Text("Attendees")
-                    .font(.headline)
-                Text(history.attendeeString)
-                if let transcript = history.transcript {
+                if let transcript = transcript.transcript {
                     Text("Transcript")
                         .font(.headline)
                         .padding(.top)
@@ -23,20 +20,20 @@ struct HistoryView: View {
                 }
             }
         }
-        .navigationTitle(Text(history.date, style: .date))
+        .navigationTitle(Text(transcript.date, style: .date))
         .padding()
     }
 }
 
-extension History {
+extension Transcript {
     var attendeeString: String {
         ListFormatter.localizedString(byJoining: attendees.map { $0.name })
     }
 }
 
 struct HistoryView_Previews: PreviewProvider {
-    static var history: History {
-        History(attendees: [
+    static var history: Transcript {
+        Transcript(attendees: [
             IeltsTestQuestion.Attendee(name: "Jon"),
             IeltsTestQuestion.Attendee(name: "Darla"),
             IeltsTestQuestion.Attendee(name: "Luis")
@@ -45,6 +42,6 @@ struct HistoryView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        HistoryView(history: history)
+        TranscriptView(transcript: history)
     }
 }

@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct History: Identifiable, Codable {
+struct Transcript: Identifiable, Codable {
     let id: UUID
     let date: Date
     var attendees: [IeltsTestQuestion.Attendee]

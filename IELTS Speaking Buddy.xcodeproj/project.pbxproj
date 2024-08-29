@@ -31,14 +31,14 @@
 		216D67C62C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B82C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift */; };
 		216D67C72C3B1E7F00CFC78A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */; };
 		216D67C82C3B1E7F00CFC78A /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */; };
-		216D67C92C3B1E7F00CFC78A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AD2C3B1E7F00CFC78A /* HistoryView.swift */; };
+		216D67C92C3B1E7F00CFC78A /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AD2C3B1E7F00CFC78A /* TranscriptView.swift */; };
 		216D67D32C3B1E9200CFC78A /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */; };
 		216D67D42C3B1E9200CFC78A /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CF2C3B1E9200CFC78A /* ScrumTimer.swift */; };
 		216D67D52C3B1E9200CFC78A /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */; };
 		216D67D62C3B1E9200CFC78A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67D12C3B1E9200CFC78A /* Theme.swift */; };
 		216D67D72C3B1E9200CFC78A /* IeltsTestQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CB2C3B1E9200CFC78A /* IeltsTestQuestion.swift */; };
 		216D67D82C3B1E9200CFC78A /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CC2C3B1E9200CFC78A /* ErrorWrapper.swift */; };
-		216D67D92C3B1E9200CFC78A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CD2C3B1E9200CFC78A /* History.swift */; };
+		216D67D92C3B1E9200CFC78A /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CD2C3B1E9200CFC78A /* Transcript.swift */; };
 		216D67DA2C3B1E9200CFC78A /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */; };
 		216D67DD2C3B1EA300CFC78A /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 216D67DB2C3B1EA300CFC78A /* ding.wav */; };
 /* End PBXBuildFile section */
@@ -78,7 +78,7 @@
 		216D67AA2C3B1E7F00CFC78A /* QuestionEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionEditView.swift; sourceTree = "<group>"; };
 		216D67AB2C3B1E7F00CFC78A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		216D67AD2C3B1E7F00CFC78A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		216D67AD2C3B1E7F00CFC78A /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
 		216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTimerView.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		216D67CB2C3B1E9200CFC78A /* IeltsTestQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IeltsTestQuestion.swift; sourceTree = "<group>"; };
 		216D67CC2C3B1E9200CFC78A /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
-		216D67CD2C3B1E9200CFC78A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		216D67CD2C3B1E9200CFC78A /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
 		216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		216D67CF2C3B1E9200CFC78A /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				216D67AA2C3B1E7F00CFC78A /* QuestionEditView.swift */,
 				216D67AB2C3B1E7F00CFC78A /* DetailView.swift */,
 				216D67AC2C3B1E7F00CFC78A /* ErrorView.swift */,
-				216D67AD2C3B1E7F00CFC78A /* HistoryView.swift */,
+				216D67AD2C3B1E7F00CFC78A /* TranscriptView.swift */,
 				216D67AE2C3B1E7F00CFC78A /* MeetingFooterView.swift */,
 				216D67AF2C3B1E7F00CFC78A /* MeetingHeaderView.swift */,
 				216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */,
@@ -209,7 +209,7 @@
 				216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */,
 				216D67CB2C3B1E9200CFC78A /* IeltsTestQuestion.swift */,
 				216D67CC2C3B1E9200CFC78A /* ErrorWrapper.swift */,
-				216D67CD2C3B1E9200CFC78A /* History.swift */,
+				216D67CD2C3B1E9200CFC78A /* Transcript.swift */,
 				216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */,
 				216D67CF2C3B1E9200CFC78A /* ScrumTimer.swift */,
 				216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */,
@@ -375,14 +375,14 @@
 				216D67D62C3B1E9200CFC78A /* Theme.swift in Sources */,
 				216D67D72C3B1E9200CFC78A /* IeltsTestQuestion.swift in Sources */,
 				216D67D82C3B1E9200CFC78A /* ErrorWrapper.swift in Sources */,
-				216D67D92C3B1E9200CFC78A /* History.swift in Sources */,
+				216D67D92C3B1E9200CFC78A /* Transcript.swift in Sources */,
 				216D67DA2C3B1E9200CFC78A /* ScrumStore.swift in Sources */,
 				216D67C52C3B1E7F00CFC78A /* MeetingHeaderView.swift in Sources */,
 				216D67C62C3B1E7F00CFC78A /* TrailingIconLabelStyle.swift in Sources */,
 				211438BE2C7E6B600057E8D2 /* Speaker.swift in Sources */,
 				216D67C72C3B1E7F00CFC78A /* ErrorView.swift in Sources */,
 				216D67C82C3B1E7F00CFC78A /* ScrumsView.swift in Sources */,
-				216D67C92C3B1E7F00CFC78A /* HistoryView.swift in Sources */,
+				216D67C92C3B1E7F00CFC78A /* TranscriptView.swift in Sources */,
 				216D677A2C3B109000CFC78A /* SpeakingBuddyApp.swift in Sources */,
 				2168D8032C80B3FB00B9E390 /* QuestionSectionPickerView.swift in Sources */,
 			);
