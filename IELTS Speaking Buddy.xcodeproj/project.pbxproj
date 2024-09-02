@@ -41,6 +41,12 @@
 		216D67D92C3B1E9200CFC78A /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CD2C3B1E9200CFC78A /* Transcript.swift */; };
 		216D67DA2C3B1E9200CFC78A /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67CE2C3B1E9200CFC78A /* ScrumStore.swift */; };
 		216D67DD2C3B1EA300CFC78A /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 216D67DB2C3B1EA300CFC78A /* ding.wav */; };
+		21FADBB62C8656EC00D382CC /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB52C8656EC00D382CC /* Development.xcconfig */; };
+		21FADBB72C8656EC00D382CC /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB52C8656EC00D382CC /* Development.xcconfig */; };
+		21FADBB82C8656EC00D382CC /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB52C8656EC00D382CC /* Development.xcconfig */; };
+		21FADBBA2C86597F00D382CC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB92C86597F00D382CC /* Release.xcconfig */; };
+		21FADBBB2C86597F00D382CC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB92C86597F00D382CC /* Release.xcconfig */; };
+		21FADBBC2C86597F00D382CC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB92C86597F00D382CC /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,8 @@
 		216D67D02C3B1E9200CFC78A /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		216D67D12C3B1E9200CFC78A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		216D67DB2C3B1EA300CFC78A /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		21FADBB52C8656EC00D382CC /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		21FADBB92C86597F00D382CC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,8 @@
 		216D676D2C3B109000CFC78A = {
 			isa = PBXGroup;
 			children = (
+				21FADBB92C86597F00D382CC /* Release.xcconfig */,
+				21FADBB52C8656EC00D382CC /* Development.xcconfig */,
 				216D67782C3B109000CFC78A /* IELTS Speaking Buddy */,
 				216D67892C3B109100CFC78A /* IELTS Speaking BuddyTests */,
 				216D67932C3B109100CFC78A /* IELTS Speaking BuddyUITests */,
@@ -330,6 +340,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21FADBBA2C86597F00D382CC /* Release.xcconfig in Resources */,
+				21FADBB62C8656EC00D382CC /* Development.xcconfig in Resources */,
 				216D67DD2C3B1EA300CFC78A /* ding.wav in Resources */,
 				216D677E2C3B109100CFC78A /* Assets.xcassets in Resources */,
 			);
@@ -339,6 +351,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21FADBBC2C86597F00D382CC /* Release.xcconfig in Resources */,
+				21FADBB72C8656EC00D382CC /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21FADBBB2C86597F00D382CC /* Release.xcconfig in Resources */,
+				21FADBB82C8656EC00D382CC /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +439,7 @@
 /* Begin XCBuildConfiguration section */
 		216D67982C3B109100CFC78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB52C8656EC00D382CC /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -486,6 +503,7 @@
 		};
 		216D67992C3B109100CFC78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB92C86597F00D382CC /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -542,6 +560,7 @@
 		};
 		216D679B2C3B109100CFC78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB52C8656EC00D382CC /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -575,6 +594,7 @@
 		};
 		216D679C2C3B109100CFC78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB92C86597F00D382CC /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,6 +628,7 @@
 		};
 		216D679E2C3B109100CFC78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB52C8656EC00D382CC /* Development.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -627,6 +648,7 @@
 		};
 		216D679F2C3B109100CFC78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB92C86597F00D382CC /* Release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -646,6 +668,7 @@
 		};
 		216D67A12C3B109100CFC78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB52C8656EC00D382CC /* Development.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -663,6 +686,7 @@
 		};
 		216D67A22C3B109100CFC78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FADBB92C86597F00D382CC /* Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
