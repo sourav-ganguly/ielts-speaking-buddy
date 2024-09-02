@@ -14,6 +14,8 @@ struct QuestionEditView: View {
 
                 TextField("Add Question", text: $scrum.title)
 
+                QuestionSectionPickerView(selectedOption: $scrum.questionSection)
+
                 HStack {
                     Slider(value: $scrum.lengthInMinutesAsDouble, in: 1...30, step: 1) {
                         Text("Length")
@@ -25,8 +27,6 @@ struct QuestionEditView: View {
                 }
 
                 ThemePicker(selection: $scrum.theme)
-
-                QuestionSectionPickerView(selectedOption: $scrum.questionSection)
             }
         }
     }

@@ -13,11 +13,11 @@ struct CardView: View {
                 .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
-
+                Text(scrum.questionSection)
+                Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                     .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
-                Spacer()
             }
             .font(.caption)
         }

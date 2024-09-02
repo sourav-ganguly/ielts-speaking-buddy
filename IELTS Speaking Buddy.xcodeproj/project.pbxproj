@@ -19,7 +19,7 @@
 		216D67BA2C3B1E7F00CFC78A /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B12C3B1E7F00CFC78A /* ExamView.swift */; };
 		216D67BB2C3B1E7F00CFC78A /* QuestionEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AA2C3B1E7F00CFC78A /* QuestionEditView.swift */; };
 		216D67BC2C3B1E7F00CFC78A /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B72C3B1E7F00CFC78A /* ThemeView.swift */; };
-		216D67BD2C3B1E7F00CFC78A /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */; };
+		216D67BD2C3B1E7F00CFC78A /* NewQuestionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B22C3B1E7F00CFC78A /* NewQuestionSheet.swift */; };
 		216D67BE2C3B1E7F00CFC78A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67AB2C3B1E7F00CFC78A /* DetailView.swift */; };
 		216D67BF2C3B1E7F00CFC78A /* QuestionTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */; };
 		216D67C02C3B1E7F00CFC78A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216D67A92C3B1E7F00CFC78A /* CardView.swift */; };
@@ -83,7 +83,7 @@
 		216D67AF2C3B1E7F00CFC78A /* QuestionDetailTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailTimerView.swift; sourceTree = "<group>"; };
 		216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTimerView.swift; sourceTree = "<group>"; };
 		216D67B12C3B1E7F00CFC78A /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
-		216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
+		216D67B22C3B1E7F00CFC78A /* NewQuestionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestionSheet.swift; sourceTree = "<group>"; };
 		216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		216D67B52C3B1E7F00CFC78A /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				216D67AF2C3B1E7F00CFC78A /* QuestionDetailTimerView.swift */,
 				216D67B02C3B1E7F00CFC78A /* QuestionTimerView.swift */,
 				216D67B12C3B1E7F00CFC78A /* ExamView.swift */,
-				216D67B22C3B1E7F00CFC78A /* NewScrumSheet.swift */,
+				216D67B22C3B1E7F00CFC78A /* NewQuestionSheet.swift */,
 				216D67B32C3B1E7F00CFC78A /* ScrumProgressViewStyle.swift */,
 				216D67B42C3B1E7F00CFC78A /* ScrumsView.swift */,
 				216D67B52C3B1E7F00CFC78A /* SpeakerArc.swift */,
@@ -361,7 +361,7 @@
 				211438C12C7E71FF0057E8D2 /* Extras.swift in Sources */,
 				211438BC2C7E0B340057E8D2 /* PercentageArc.swift in Sources */,
 				216D67BC2C3B1E7F00CFC78A /* ThemeView.swift in Sources */,
-				216D67BD2C3B1E7F00CFC78A /* NewScrumSheet.swift in Sources */,
+				216D67BD2C3B1E7F00CFC78A /* NewQuestionSheet.swift in Sources */,
 				216D67BE2C3B1E7F00CFC78A /* DetailView.swift in Sources */,
 				216D67BF2C3B1E7F00CFC78A /* QuestionTimerView.swift in Sources */,
 				216D67C02C3B1E7F00CFC78A /* CardView.swift in Sources */,

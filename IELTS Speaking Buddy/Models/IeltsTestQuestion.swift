@@ -47,7 +47,7 @@ extension IeltsTestQuestion {
         }
     }
     
-    static var emptyScrum: IeltsTestQuestion {
+    static var emptyTest: IeltsTestQuestion {
         IeltsTestQuestion(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
     }
 }
@@ -55,7 +55,7 @@ extension IeltsTestQuestion {
 extension IeltsTestQuestion {
     static let sampleData: [IeltsTestQuestion] =
     [
-        IeltsTestQuestion(title: "Tell me about the place you grow up.",
+        IeltsTestQuestion(title: "Tell me about the place you grow up. a b c d e f g h i j k l m n" ,
                           attendees: ["Cathy"],
                           lengthInMinutes: 1,
                           theme: .orange),
