@@ -47,6 +47,7 @@
 		21FADBBA2C86597F00D382CC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB92C86597F00D382CC /* Release.xcconfig */; };
 		21FADBBB2C86597F00D382CC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB92C86597F00D382CC /* Release.xcconfig */; };
 		21FADBBC2C86597F00D382CC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21FADBB92C86597F00D382CC /* Release.xcconfig */; };
+		21FADBBE2C865B1200D382CC /* OpenApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FADBBD2C865B0700D382CC /* OpenApiWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		216D67DB2C3B1EA300CFC78A /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		21FADBB52C8656EC00D382CC /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		21FADBB92C86597F00D382CC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		21FADBBD2C865B0700D382CC /* OpenApiWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenApiWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		216D67D22C3B1E9200CFC78A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				21FADBBD2C865B0700D382CC /* OpenApiWrapper.swift */,
 				211438BD2C7E6B600057E8D2 /* Speaker.swift */,
 				216D67CA2C3B1E9200CFC78A /* AVPlayer+Ding.swift */,
 				216D67CB2C3B1E9200CFC78A /* IeltsTestQuestion.swift */,
@@ -376,6 +379,7 @@
 				216D67BB2C3B1E7F00CFC78A /* QuestionEditView.swift in Sources */,
 				211438C12C7E71FF0057E8D2 /* Extras.swift in Sources */,
 				211438BC2C7E0B340057E8D2 /* PercentageArc.swift in Sources */,
+				21FADBBE2C865B1200D382CC /* OpenApiWrapper.swift in Sources */,
 				216D67BC2C3B1E7F00CFC78A /* ThemeView.swift in Sources */,
 				216D67BD2C3B1E7F00CFC78A /* NewQuestionSheet.swift in Sources */,
 				216D67BE2C3B1E7F00CFC78A /* DetailView.swift in Sources */,
