@@ -26,7 +26,8 @@ struct IeltsTestQuestion: Identifiable, Codable {
     }
     var theme: Theme
     var transcript: [Transcript] = []
-    
+    var transcriptErrors: [String] = []
+
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title

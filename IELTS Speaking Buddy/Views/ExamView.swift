@@ -13,7 +13,7 @@ struct ExamView: View {
     let speaker = Speaker(name: "Mr. Abdul", isCompleted: false)
 
     private var player: AVPlayer { AVPlayer.sharedDingPlayer }
-    
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16.0)
@@ -53,7 +53,7 @@ struct ExamView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
     }
-    
+
     private func startScrum() {
         scrumTimer.reset(lengthInMinutes: question.lengthInMinutes, attendees: question.attendees)
         scrumTimer.speakerChangedAction = {
@@ -65,15 +65,30 @@ struct ExamView: View {
         isRecording = true
         scrumTimer.startScrum()
     }
-    
+
     private func endScrum() {
         scrumTimer.stopScrum()
         speechRecognizer.stopTranscribing()
         isRecording = false
         let newHistory = Transcript(attendees: question.attendees,
                                  transcript: speechRecognizer.transcript)
+        startChatGpt(transcript: newHistory.transcript ?? "")
         question.transcript.insert(newHistory, at: 0)
     }
+
+    private func startChatGpt(transcript: String) {
+        let openApiWrapper = OpenApiWrapper()
+        Task {
+            do {
+                let result = try await openApiWrapper.createChatCompletion(prompt: "This is a IELTS exam speaking question. I am giving you a answer. Find out all grammar errors in the answer from the transcript below point by point: \(transcript)")
+                print("Chat GPT result is \(result)")
+                question.transcriptErrors.append(result ?? "")
+            } catch {
+                print("Error: \(error)")
+            }
+        }
+    }
+
 }
 
 struct MeetingView_Previews: PreviewProvider {
