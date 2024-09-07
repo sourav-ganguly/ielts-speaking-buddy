@@ -9,26 +9,13 @@ struct Transcript: Identifiable, Codable {
     let date: Date
     var attendees: [IeltsTestQuestion.Attendee]
     var transcript: String?
+    var errorsInTranscript: String?
 
-    init(id: UUID = UUID(), date: Date = Date(), attendees: [IeltsTestQuestion.Attendee], transcript: String? = nil) {
+    init(id: UUID = UUID(), date: Date = Date(), attendees: [IeltsTestQuestion.Attendee], transcript: String? = nil, errorsInTranscript: String? = nil) {
         self.id = id
         self.date = date
         self.attendees = attendees
         self.transcript = transcript
+        self.errorsInTranscript = errorsInTranscript
     }
-
-//    mutating func startChatGpt() {
-//        guard let transcript else {
-//            return
-//        }
-//        let openApiWrapper = OpenApiWrapper()
-//        Task {
-//            do {
-//                let result = try await openApiWrapper.createChatCompletion(prompt: "")
-//                self.chatGptText = result
-//            } catch {
-//                print("Error: \(error)")
-//            }
-//        }
-//    }
 }

@@ -18,6 +18,13 @@ struct TranscriptView: View {
                         .padding(.top)
                     Text(transcript)
                 }
+
+                if let errorsInTranscript = transcript.errorsInTranscript {
+                    Text("Error in transcript")
+                        .font(.headline)
+                        .padding(.top)
+                    Text(errorsInTranscript)
+                }
             }
         }
         .navigationTitle(Text(transcript.date, style: .date))
@@ -38,7 +45,8 @@ struct HistoryView_Previews: PreviewProvider {
             IeltsTestQuestion.Attendee(name: "Darla"),
             IeltsTestQuestion.Attendee(name: "Luis")
         ],
-                transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI...")
+                   transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI...",
+                   errorsInTranscript: "The errors are below")
     }
     
     static var previews: some View {
