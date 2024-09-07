@@ -75,10 +75,10 @@ struct ExamView: View {
     }
 
     private func getErrorInTranscript(_ transcript: String) {
-        let openApiWrapper = OpenApiWrapper()
+        let api = API()
         Task {
             do {
-                let errorsInTranscript = try await openApiWrapper.createChatCompletion(prompt: "This is a IELTS exam speaking question. I am giving you a answer. Find out all grammar errors in the answer from the transcript below point by point: \(transcript)")
+                let errorsInTranscript = try await api.createChatCompletion(prompt: "This is a IELTS exam speaking question. I am giving you a answer. Find out all grammar errors in the answer from the transcript below point by point: \(transcript)")
                 print("Chat GPT output is \(errorsInTranscript ?? "")")
 
                 let newHistory = Transcript(attendees: question.attendees,
@@ -91,7 +91,6 @@ struct ExamView: View {
             }
         }
     }
-
 }
 
 struct MeetingView_Previews: PreviewProvider {
