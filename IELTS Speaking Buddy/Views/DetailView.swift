@@ -54,7 +54,7 @@ struct DetailView: View {
                 .accessibilityElement(children: .combine)
             }
 
-            Section(header: Text("Transcripts")) {
+            Section(header: Text("Answer Analysis")) {
                 if scrum.transcript.isEmpty {
                     Label("No transcripts yet", systemImage: "calendar.badge.exclamationmark")
                 }

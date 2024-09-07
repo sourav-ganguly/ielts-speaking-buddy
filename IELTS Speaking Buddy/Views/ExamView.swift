@@ -78,7 +78,8 @@ struct ExamView: View {
         let api = API()
         Task {
             do {
-                let errorsInTranscript = try await api.createChatCompletion(prompt: "This is a IELTS exam speaking question. I am giving you a answer. Find out all grammar errors in the answer from the transcript below point by point: \(transcript)")
+                let prompt = "This is a IELTS exam speaking question. I am giving you the answer transcript. Find out all grammar errors in the answer from the transcript below. Do not show any punctuation error or talk about punctuation. Write point by point. transcript: \(transcript)"
+                let errorsInTranscript = try await api.createChatCompletion(prompt: prompt)
                 print("Chat GPT output is \(errorsInTranscript ?? "")")
 
                 let newHistory = Transcript(attendees: question.attendees,
